@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Number Guessing Game</title>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Bootsrap CSS -->
-     <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootsrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>Number Guessing Game</h1>
-        <p>Guess a number between 1 and 5</p>
-        <input type="number" id="guessInput" class="form control" placeholder="Enter your guess">
-        <button class="btn btn-primary mt-3" onclick="guessNumber()"> Submit Guess </button>
-        <p id="resultmessage" class="result-message"></p>
-    </div>
-<script src="script.js"></script>
+
+<h2>Temperature Converter</h2>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+
+<p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit">
+</p>
+
+<p>
+    Celsius: <span id="outputCelsius"></span>
+</p>
+
+<p>
+    <label for="temperatureRange">Select a temperature range:</label>
+    <select id="temperatureRange"></select>
+</p>
+
+<button onclick="convertTemperature()">Convert</button>
+<script src="script.js" defer></script>
 </body>
 </html>
